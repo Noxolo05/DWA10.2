@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.58/dist/shoelace.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.58/dist/themes/light.css">
+
+  <title>Tally App</title>
+</head>
+<body>
+  <div>
+    <h1>Tally Counter</h1>
+    <sl-button id="addButton" variant="primary">Add</sl-button>
+    <sl-button id="subtractButton" variant="danger">Subtract</sl-button>
+    <sl-button id="resetButton" variant="warning">Reset</sl-button>
+    <sl-alert id="resetAlert" type="success" closable>
+      <sl-icon slot="icon" name="check2-circle"></sl-icon>
+      Counter has been reset!
+    </sl-alert>
+    <p>Counter: <span id="counterValue">0</span></p>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
